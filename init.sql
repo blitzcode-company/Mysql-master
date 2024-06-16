@@ -1,3 +1,3 @@
-CREATE USER 'slave'@'%' IDENTIFIED BY 'Slave2024.';
-GRANT REPLICATION SLAVE ON *.* TO 'slave'@'%';
+CREATE USER 'replication'@'%' IDENTIFIED BY 'Repli2024.';
+GRANT REPLICATION SLAVE ON *.* TO 'replication'@'%';
 FLUSH PRIVILEGES;
