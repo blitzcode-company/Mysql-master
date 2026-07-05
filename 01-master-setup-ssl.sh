@@ -2,7 +2,7 @@
 set -e
 
 # CORRER EN EL MASTER (192.168.1.105)
-PROJECT_DIR="/home/mysql-master"
+PROJECT_DIR="/home/Mysql-master"
 SSL_DIR="${PROJECT_DIR}/mysql-ssl"
 COMPOSE_FILE="${PROJECT_DIR}/docker-compose.yml"
 MYCNF_FILE="${PROJECT_DIR}/my.cnf"
