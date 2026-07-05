@@ -5,7 +5,7 @@ set -e
 SSL_DIR="/home/Mysql-master/mysql/ssl"
 SLAVE_USER="root"
 SLAVE_HOST="192.168.1.106"
-SLAVE_SSL_DIR="/home/mysql-slave/mysql/ssl"
+SLAVE_SSL_DIR="/home/Mysql-slave/mysql/ssl"
 
 echo "== Creando carpeta destino en el slave (si no existe) =="
 ssh "${SLAVE_USER}@${SLAVE_HOST}" "mkdir -p ${SLAVE_SSL_DIR}"
