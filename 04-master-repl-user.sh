@@ -4,8 +4,8 @@ set -e
 # CORRER EN EL MASTER (192.168.1.105), despues de reiniciar el contenedor con SSL
 CONTAINER_NAME="mysql-master"
 ROOT_PASSWORD="Blitzcode1."
-REPL_USER="repl"
-REPL_PASSWORD="Blitzcode1."
+REPL_USER="replication"
+REPL_PASSWORD="Repli2024."
 
 echo "== Verificando si el usuario ${REPL_USER} ya existe =="
 EXISTS=$(docker exec -i "${CONTAINER_NAME}" mysql -uroot -p"${ROOT_PASSWORD}" -N -B \
