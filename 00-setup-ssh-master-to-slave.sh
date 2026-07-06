@@ -1,13 +1,8 @@
 #!/bin/bash
 set -e
 
-# ============================================================
-# EDITAR: usuario con el que te conectás a cada servidor
-# Correr este script DESDE EL MASTER (192.168.1.105)
-# ============================================================
-SSH_USER="root"                 # <-- cambiar si usás otro usuario
+SSH_USER="root"                
 SLAVE_HOST="192.168.1.106"
-# ============================================================
 
 echo "== Generando clave SSH en el master (si no existe ya) =="
 if [ ! -f ~/.ssh/id_rsa ]; then
